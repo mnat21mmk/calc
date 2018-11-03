@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,58 +14,50 @@
     </style> -->
 </head>
 <body>
-<div class="container-fluid">
-<div class="row">
 
-<div class="col-md-4">
-<div class="calkulator">
+<div class="calk">
+<div class="container">
 
+  
+  <div class="row">
+    
+    <form name="calculator" class="calc">  <!-- Вбудований калькулятор!!! --> 
+    <p>Калькулятор </p> 
+     
     <div class="row">
-    <div class="col-md-12">
-    <p>
-    <input type="textfield" name="ans" value="0">
-    </p>
-    </div>
+      <input type="textfield" class="styled vv" name="ans"  value="">
+     </div>
+     <div class="row">
+      <input type="button" value="7" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='7'">
+      <input type="button" value="8" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='8'">
+      <input type="button" value="9" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='9'">
+      <input type="button" value="/" class="btn btn-outline-dark btn-sm col-md-3" onClick="document.calculator.ans.value+='/'">
+      <input type="reset" class="btn btn-outline-dark btn-sm col-md-3" value="C">
+      </div>
 
-    <div class="col-md-12">  
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>/</button>
-    </div>
-    </div>
-    
-    <div class="row">
-    <div class="col-md-12"> 
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>*</button>
-    </div>
-    </div>
-    
-    <div class="row">
-    <div class="col-md-12"> 
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>-</button>
-    </div>
-    </div>
-    
-    <div class="row">
-    <div class="col-md-12"> 
-    <button>0</button>
-    <button>,</button>
-    <button>+</button>
-    <button>=</button>
-    </div>
-    </div>
-   </div>
-   
- </div>
- </div>
- </div>
+      <div class="row">
+      <input type="button" value="4" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='4'">
+      <input type="button" value="5" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='5'">
+      <input type="button" value="6" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='6'">
+      <input type="button" value="*" class="btn btn-outline-dark btn-sm col-md-3" onClick="document.calculator.ans.value+='*'">
+      <input type="button" class="btn btn-outline-dark btn-sm col-md-3" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" value="=">
+      </div>
+
+      <div class="row">
+      <input type="button" value="1" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='1'">
+      <input type="button" value="2" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='2'">
+      <input type="button" value="3" class="btn btn-outline-dark btn-sm col-md-2" onClick="document.calculator.ans.value+='3'">
+      <input type="button" value="+" class="btn btn-outline-dark btn-sm col-md-3" onClick="document.calculator.ans.value+='+'">
+      <input type="button" value="," class="btn btn-outline-dark btn-sm col-md-3" onClick="document.calculator.ans.value+='.'">
+      </div>
+      
+      <div class="row">
+      <input type="button" value="0" class="btn btn-outline-dark btn-sm col-md-6" onClick="document.calculator.ans.value+='0'">
+      <input type="button" value="-" class="btn btn-outline-dark btn-sm col-md-3" onClick="document.calculator.ans.value+='-'">
+      <input type="image" src="bober.png" name="bober" />
+      </div>
+     
+      
  </div>
  </div>     
 
